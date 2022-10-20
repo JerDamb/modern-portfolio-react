@@ -3,12 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
   padding: 10px 20px;
-  // background: rgba(255, 255, 255, 0.25);
-  // backdrop-filter: blur(4px);
-  // -webkit-backdrop-filter: blur(4px);
-  // border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
 
@@ -62,9 +61,9 @@
           background: red;
         }
       }
-      @media screen and (max-width: 900px) {
-        display: none;
-      }
+    }
+    @media screen and (max-width: 900px) {
+      display: none;
     }
   }
 
@@ -76,7 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: blue;
     cursor: pointer;
 
     svg {
@@ -84,96 +83,65 @@
       height: 70%;
       color: white;
     }
+
+    div {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
+      padding: 1rem;
+      width: 80%;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+      background: url(../../assets/bgWhite.png);
+      background-color: white;
+      background-size: cover;
+      background-repeat: repeat;
+      box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+
+      svg {
+        width: 35px;
+        height: 35px;
+        color: green;
+        margin: 0.5rem 1rem;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        li {
+          margin: 1rem;
+
+          a {
+            color: gray;
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: purple;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
   }
 }
-
-//   .app__navbar-menu {
-//     width: 35px;
-//     height: 35px;
-//     border-radius: 50%;
-//     position: relative;
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: blue;
-
-//     svg {
-//       width: 70%;
-//       height: 70%;
-//       color: white;
-//     }
-
-//     // div {
-//     //   position: fixed;
-//     //   top: 0;
-//     //   bottom: 0;
-//     //   right: 0;
-//     //   z-index: 5;
-
-//     //   padding: 1rem;
-
-//     //   width: 80%;
-//     //   height: 100vh;
-
-//     //   display: flex;
-//     //   justify-content: flex-end;
-//     //   align-items: flex-end;
-//     //   flex-direction: column;
-
-//     //   background: url("../../assets/bgWhite.png");
-//     //   background-color: white;
-//     //   background-size: cover;
-//     //   background-repeat: repeat;
-
-//     //   /* top box shadow */
-//     //   box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
-
-//     //   svg {
-//     //     width: 35px;
-//     //     height: 35px;
-//     //     color: blue;
-//     //     margin: 0.5rem 1rem;
-//     //   }
-
-//     //   ul {
-//     //     list-style: none;
-//     //     margin: 0;
-//     //     padding: 0;
-//     //     height: 100%;
-//     //     width: 100%;
-
-//     //     display: flex;
-//     //     justify-content: flex-start;
-//     //     align-items: flex-start;
-//     //     flex-direction: column;
-
-//     //     li {
-//     //       margin: 1rem;
-
-//     //       a {
-//     //         color: gray;
-//     //         text-decoration: none;
-//     //         font-size: 1rem;
-//     //         text-transform: uppercase;
-//     //         font-weight: 500;
-
-//     //         transition: all 0.3s ease-in-out;
-
-//     //         &:hover {
-//     //           color: pink;
-//     //         }
-//     //       }
-//     //     }
-//     //   }
-
-//     //   @media screen and (min-width: 900px) {
-//     //     display: none;
-//     //   }
-//     // }
-
-//     // @media screen and (min-width: 900px) {
-//     //   display: none;
-//     // }
-//   }
-// }
