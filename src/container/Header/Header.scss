@@ -1,0 +1,23 @@
+.app__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .app_header-info {
+    .app__header-badge {
+      .badge-cmp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      span {
+      }
+      div {
+        .p-text {
+        }
+        .head-text {
+        }
+      }
+    }
+  }
+}
