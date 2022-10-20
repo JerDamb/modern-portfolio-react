@@ -16,7 +16,7 @@ const Header = () => {
     }
   }
   return (
-    <div className='app__header'>
+    <div id="home" className='app__header'>
       <motion.div
         whileInView={{ x:[-100, 0], opacity: [0, 1] }}
         transition={{ duration: 1.5 }}
