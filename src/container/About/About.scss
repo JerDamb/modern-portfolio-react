@@ -1,4 +1,11 @@
 .head-text {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+
+  span {
+    color: rgb(0, 73, 163);
+  }
 }
 
 .app__about {
